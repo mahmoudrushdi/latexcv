@@ -168,28 +168,54 @@
 \definecolor{powderblue}{RGB}{190,220,255}
 \definecolor{darkestblue}{RGB}{0,50,80}
 
+%% Uncommect the following line to produce it in grayscale. 
+%\def \grey {1}
 
-%main color
-\colorlet{maincol}{orange}
+\ifx \grey \undefined
+	%main color
+	\colorlet{maincol}{orange}
 
-%secondary colors
-\colorlet{secondcol}{lblue}
-\colorlet{thirdcol}{darkblue}
-\colorlet{fourthcol}{darkerblue}
-\colorlet{fifthcol}{lgray}
-\colorlet{sixthcol}{darkblue}
+	%secondary colors
+	\colorlet{secondcol}{lblue}
+	\colorlet{thirdcol}{darkblue}
+	\colorlet{fourthcol}{darkerblue}
+	\colorlet{fifthcol}{lgray}
+	\colorlet{sixthcol}{darkblue}
 
-%background color
-\colorlet{bgcol}{powderblue}
+	%background color
+	\colorlet{bgcol}{powderblue}
 
-%textcolor
-\colorlet{textcol}{darkestblue}
+	%textcolor
+	\colorlet{textcol}{darkestblue}
 
-%titletextcolor
-\colorlet{titletext}{white}
+	%titletextcolor
+	\colorlet{titletext}{white}
 
-%sectioncolor
-\colorlet{sectcol}{white}
+	%sectioncolor
+	\colorlet{sectcol}{white}
+\else
+	%main color
+	\colorlet{maincol}{black}
+
+	%secondary colors
+	\colorlet{secondcol}{gray}
+	\colorlet{thirdcol}{darkgray}
+	\colorlet{fourthcol}{black}
+	\colorlet{fifthcol}{lightgray}
+	\colorlet{sixthcol}{darkgray}
+
+	%background color
+	\colorlet{bgcol}{white}
+
+	%textcolor
+	\colorlet{textcol}{black}
+
+	%titletextcolor
+	\colorlet{titletext}{white}
+
+	%sectioncolor
+	\colorlet{sectcol}{white}
+\fi
 
 %set a background col for whole page
 \pagecolor{bgcol}
@@ -397,16 +423,26 @@
 		
 			% LANGUAGES
 			\cvsect{Languages}{0.49}{thirdcol}{textcol}\\[4pt]
-			\icontext{Language}{12}{\colorbox{maincol}{Arabic (native)}}\\
-			\icontext{Language}{12}{\colorbox{maincol}{English (c1)}}\\
-			\icontext{Language}{12}{\colorbox{maincol}{German (b21}}\\
-
+			\ifx \grey \undefined
+				\icontext{Language}{12}{\colorbox{maincol}{Arabic (native)}}\\
+				\icontext{Language}{12}{\colorbox{maincol}{English (c1)}}\\
+				\icontext{Language}{12}{\colorbox{maincol}{German (b21}}\\
+			\else
+				\icontext{Language}{12}{\colorbox{fifthcol}{Arabic (native)}}\\
+				\icontext{Language}{12}{\colorbox{fifthcol}{English (c1)}}\\
+				\icontext{Language}{12}{\colorbox{fifthcol}{German (b21}}\\
+			\fi
 			% LICENCES
 			\cvsect{Certifications \& Licences}{1}{thirdcol}{textcol}\\[4pt]
-			\icontext{Group}{12}{\colorbox{maincol}{Scrum master}}\\
-			\icontext{Suitcase}{12}{\colorbox{maincol}{Scrum product owner}}\\
-			\icontext{Car}{12}{\colorbox{maincol}{Driving license (A \& B)}}\\
-
+			\ifx \grey \undefined
+				\icontext{Group}{12}{\colorbox{maincol}{Scrum master}}\\
+				\icontext{Suitcase}{12}{\colorbox{maincol}{Scrum product owner}}\\
+				\icontext{Car}{12}{\colorbox{maincol}{Driving license (A \& B)}}\\
+			\else
+				\icontext{Group}{12}{\colorbox{fifthcol}{Scrum master}}\\
+				\icontext{Suitcase}{12}{\colorbox{fifthcol}{Scrum product owner}}\\
+				\icontext{Car}{12}{\colorbox{fifthcol}{Driving license (A \& B)}}\\
+			\fi
 		}
 
 		% PIE CHART	
@@ -416,7 +452,7 @@
 			\slice{13}{\shortstack{ SW \\ Architecting}}{fifthcol}{0}
 			\slice{10}{\shortstack{System \\ Modeling}}{fourthcol}{0}
 			\slice{13}{\shortstack{Quality \\ Assurance}}{thirdcol}{0}
-			\slice{6}{\shortstack{Requiements \\ Analysis}}{secondcol}{0}
+			\slice{6}{\shortstack{Requirements \\ Analysis}}{secondcol}{0}
 			\slice{40}{SW Development}{maincol}{-15}
 		\end{piechart}\\
 	}
