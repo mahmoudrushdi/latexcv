@@ -330,21 +330,21 @@
 \mystrut
 \vspace{-12pt}
 
-\begin{tabular*}{1\textwidth}{ c c c}
-	\parbox[c]{0.4\linewidth}{
+\begin{tabular*}{1\textwidth}{ c c }
+	\parbox[c]{0.7\linewidth}{
 		\colorbox{thirdcol}{\HUGE{\textcolor{titletext}{\textbf{\uppercase{Mahmoud Rushdi}}} }}\\
 		\Large{\textcolor{thirdcol}{\textsc{ Embedded Software Engineer}}}\\
 	}&
-	\parbox{0.25\textwidth}{
+	\parbox{0.5\textwidth}{
 	\icontext{MapMarker}{12}{München, Germany}\\
 	\icontext{MobilePhone}{12}{+49 152 213 515 66}\\
 	\icontext{Send}{12}{mahmoud.rushdi@gmail.com}\\
-	}&
-	\parbox{0.3\textwidth}{
-	%\icontext{MousePointer}{12}{www.jankuester.com}\\
 	\icontext{Github}{12}{github.com/mahmoudrushdi}\\
-	\icontext{Twitter}{12}{@mrushdi}\\
-	}
+	}%&
+	%\parbox{0.3\textwidth}{
+	%\icontext{MousePointer}{12}{www.jankuester.com}\\
+	%\icontext{Twitter}{12}{@mrushdi}\\
+	%}
 \end{tabular*}
 
 % manage space by reducing font size
@@ -362,19 +362,22 @@
 	\mbox{
 		\parbox[c][3cm][c]{0.29\textwidth}{
 		\textcolor{textcol}{A senior software / systems engineer, with 10 years of experience 
-		focused on embedded software design, development, testing, integration and optimization.}
+		focused on embedded software design, development, testing, integration and optimization.
+		Skilled in requirements engineering and Modeling. }
 		}
 		\hspace{10pt}
 		\parbox[c][3cm][c]{0.32\textwidth}{
 			\begin{center}
 			\factbubble{\huge{\textcolor{sectcol}{\textbf{MAS}}}\\\small{\textcolor{sectcol}{\textbf{Embedded Systems}}}}{1}{maincol}{sectcol}{thirdcol}\\
 			%\textcolor{textcol}{as latest degree from}\\
-			\textcolor{textcol}{\textbf{University of Lugano}}
+			\textcolor{textcol}{\textbf{University of Lugano} \faUniversity}\\
+			\textcolor{textcol}Switzerland
+
 			\end{center}
 		}
 		\hspace{10pt}
 		\parbox[c][3cm][c]{0.29\textwidth}{
-		\textcolor{textcol}{Experienced in the classic AUTOSAR platform. Skilled in the adaptive 
+		\textcolor{textcol}{Experienced in Automotive architectures including the classical AUTOSAR and the adaptive 
 			AUTOSAR. Accomplished challenging projects targeting ADAS and safety critical systems.  
  			}
 		}
@@ -389,23 +392,32 @@
 	\mbox{
 		
 		% TEXT BOX
-		\parbox[b][150pt][c]{0.35\textwidth}{
-			\textcolor{textcol}{The biggest part I contribute to my work is in the area of software development.}\\
+		\parbox[b][150pt][c]{0.39\textwidth}{
+			%\textcolor{textcol}{The biggest part I contribute to my work is in the area of software development.}\\
 		
 			% LANGUAGES
 			\cvsect{Languages}{0.49}{thirdcol}{textcol}\\[4pt]
 			\icontext{Language}{12}{\colorbox{maincol}{Arabic (native)}}\\
 			\icontext{Language}{12}{\colorbox{maincol}{English (c1)}}\\
-			\icontext{Language}{12}{\colorbox{maincol}{German (b1)}}\\
+			\icontext{Language}{12}{\colorbox{maincol}{German (b21}}\\
+
+			% LICENCES
+			\cvsect{Certifications \& Licences}{1}{thirdcol}{textcol}\\[4pt]
+			\icontext{Group}{12}{\colorbox{maincol}{Scrum master}}\\
+			\icontext{Suitcase}{12}{\colorbox{maincol}{Scrum product owner}}\\
+			\icontext{Car}{12}{\colorbox{maincol}{Driving license (A \& B)}}\\
+
 		}
 
 		% PIE CHART	
 		\begin{piechart}{360}{2}{bgcol}{textcol}{sectcol}
-			\slice{6}{Design}{thirdcol}
-			\slice{16}{Consulting}{fourthcol}
-			\slice{16}{Research}{fifthcol}
-			\slice{16}{Projects}{secondcol}
-			\slice{46}{Development}{maincol}
+			\slice{14}{Testing}{thirdcol}
+			\slice{4}{Documentation}{secondcol}
+			\slice{13}{\shortstack{ SW \\ Architecting}}{fifthcol}
+			\slice{10}{\shortstack{System \\ Modeling}}{fourthcol}
+			\slice{13}{\shortstack{Quality \\ Assurance}}{thirdcol}
+			\slice{6}{\shortstack{Requiements \\ Analysis}}{secondcol}
+			\slice{40}{SW Development}{maincol}
 		\end{piechart}\\
 	}
 	\begin{center}
@@ -417,17 +429,18 @@
 	% BAR CHART
 	\mbox{\hspace{-14pt}
 		\begin{barchart}{10}{5.5}{sectcol}{textcol}{sectcol}{maincol}{secondcol}{thirdcol}
-			\baritem{50}{Bootstrap}{0}{0}{65}
-			\baritem{80}{Javascript}{100}{0}{0}
-			\baritem{80}{Metor}{0}{0}{70}
-			\baritem{80}{MongoDB}{0}{0}{30}
-			\baritem{50}{HTML/CSS}{0}{0}{50}
-			\baritem{50}{LaTex}{0}{0}{60}
+			
+			\baritem{50}{Java/C++14}{0}{0}{40}
+			\baritem{80}{Embedded C}{100}{0}{0}
+			\baritem{50}{python}{0}{0}{60}
+			\baritem{80}{Classical AUTOSAR}{0}{0}{70}
+			\baritem{80}{Adaptive AUTOSAR}{0}{0}{30}
+			\baritem{50}{CAN, LIN, Flexray}{0}{0}{50}
 		\end{barchart}
 		\hspace{10pt}
 
 		% TEXTBOX
-		\parbox[b][100pt][c]{0.3\textwidth}{\textcolor{textcol}{Currently, I develop realtime apps with Meteor and react.\\Formerly I worked with Java and XPages.}}
+		%\parbox[b][100pt][c]{0.3\textwidth}{\textcolor{textcol}{Currently, I develop realtime apps with Meteor and react.\\Formerly I worked with Java and XPages.}}
 	}
 	\begin{center}
 	\begin{tikzpicture}
@@ -436,32 +449,34 @@
 	\end{center}
 	\begin{center}
 	\mbox{
-		\parbox[b][2cm][c]{3cm}{
-			\textcolor{textcol}{I am using Git and Webwstorm regularly for my dev projects.}
-		}\hspace{12pt}
-		\bubbles{6/Webstorm, 5/Git, 5/Sourcetree, 4/Office, 3/Inkscape}{\cvsection{Technologies}}		
+		%\parbox[b][2cm][c]{3cm}{
+		%	\textcolor{textcol}{I am using Git and Webwstorm regularly for my dev projects.}
+		%}\hspace{12pt}
+		\bubbles{4/linux \faLinux, 5/\faGit, 4/gitlab \faGitlab, 6/CANoe\textregistered, 3/\shortstack{Rational \\ DOORS}, 4/\shortstack{Enterprise  \\ Architect}, 3/Docker}{\cvsection{Technologies}}		
 	}
 	\end{center}
 %---------------------------------------------------------------------------------------
 %	ACTIVITIES
 %----------------------------------------------------------------------------------------
-	\cvsect{Actvities}{0.49}{thirdcol}{textcol}\\[20pt]
+	\cvsect{Automotive Experience  \faAutomobile}{0.49}{thirdcol}{textcol}\\[20pt]
 	\mbox{
 		
 		% FACT BUBBLE
 		\parbox[b][3cm][c]{3cm}{
-			\factbubble{\HUGE{\textcolor{sectcol}{\textbf{7}}}\\\large{\textcolor{sectcol}{\textbf{years}}}}{0.85}{maincol}{sectcol}{thirdcol}\\
-			\textcolor{textcol}{of participation at}\\
-			\textcolor{textcol}{\textbf{Global Game Jam}}
+			\factbubble{\HUGE{\textcolor{sectcol}{\textbf{6}}}\\\large{\textcolor{sectcol}{\textbf{years}}}}{0.85}{maincol}{sectcol}{thirdcol}\\
+			\textcolor{textcol}{of experience with}\\
+			\textcolor{textcol}{\textbf{Valeo, Autoliv, BMW}}
 		}
 
 		% TEXT BOX
 		\parbox[b][3cm][c]{4cm}{
-			\textcolor{textcol}{In my freetime I read lots of news and help others on Stackoverflow. Due to bodyweight training I can keep my body and mind in balance.}
+			\textcolor{textcol}{Plus \textbf{3} more years of research projects with \textbf{Elektrobit},
+			 \textbf{Continental}, and \textbf{Energica Motor},
+			 including an ASIL-D ECU according to \textbf{ISO 26262}.}
 		}
 
 		% SQUARE BARS
-		\squares{20/Game Dev,20/Fitness,30/News,20/Stackoverflow}{1}
+		\squares{40/\shortstack{climate control \\ ECU}, 30/ECU Emulation, 20/Camera ECU,20/Airbag ECU}{1}
 	}
 \end{minipage}
 \begin{minipage}{0.05\textwidth}
@@ -484,7 +499,7 @@
 % TIMELINE
 \begin{cvtimeline}{2006}{2020}{20}{\linewidth}
 
-\cvevent{8/2006}{8/206}{BS.c. degree}{Cairo University}
+\cvevent{8/2006}{8/206}{acquired bachelor's degree}{Cairo University}
 	{Graduation Project: MPEG2 Decoder Using Hardware Software Co-design.}{thirdcol}{0}
 	
 \cvevent{1/2007}{2/2008}{joined a mobile operator}{Etisalat (Mobile Operator)}
@@ -500,11 +515,11 @@
     {Senior Software Engineer}
 	{maincol}{1}
 
-\cvevent{12/2012}{12/2013}{Master in Embedded Systems}{USI}
+\cvevent{12/2012}{12/2013}{joined master's program}{USI}
     {}
 	{thirdcol}{0}
 	
-\cvevent{12/2013}{12/2013}{Master degree}{USI}
+\cvevent{12/2013}{12/2013}{acquired master's degree}{USI}
     {Graduation Project: Modeling of Dynamic Power Management in Energy Harvesting Systems
 	using SysML.}{thirdcol}{0}
 
@@ -513,7 +528,7 @@
 	{maincol}{1}
 
 
-\cvevent{1/2017}{12/2019}{joined {\bf fortiss}}{fortiss}
+\cvevent{1/2017}{12/2019}{joined {\bf fortiss GmbH}}{fortiss}
     {Scientific researcher}
 	{maincol}{1}
 
