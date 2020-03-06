@@ -38,10 +38,10 @@
 	% param 1: value x of 100
 	% param 2: label text
 	% param 3: fill color
-	% param 4:
+	% param 4: angle shift
 	% param 5:
 	% param 6:
-	\newcommand{\slice}[3] {
+	\newcommand{\slice}[4] {
 
 		\setcounter{a}{\value{b}}
 		\addtocounter{b}{##1}
@@ -62,7 +62,7 @@
 	  	\filldraw[fill=##3!100,draw=#3!100, line width=2pt ] (0,0) -- (\pointa:#2) arc (\pointa:\pointb:#2) -- cycle;
 
 	  	% draw label
-	  	\node[label=\midangle:\colorbox{#5}{\textcolor{#4}{##2}}] at (\midangle:#2) {};
+	  	\node[label=\midangle+##4:\colorbox{#5}{\textcolor{#4}{##2}}] at (\midangle:#2) {};
 
 		\filldraw[fill=#3,draw=none] (0,0) circle (#2/2);
 	}
