@@ -168,10 +168,17 @@
 \definecolor{powderblue}{RGB}{190,220,255}
 \definecolor{darkestblue}{RGB}{0,50,80}
 
-%% Uncommect the following line to produce it in grayscale. 
-%\def \grey {1}
+% grayscale colors https://www.schemecolor.com/grayscale.php
+\definecolor{brightGray}{RGB}{238, 238, 238}
+\definecolor{chineseSilver}{RGB}{204, 204, 204}
+\definecolor{spanishGray}{RGB}{153, 153, 153}
+\definecolor{graniteGray}{RGB}{102, 102, 102}
+\definecolor{darkCharcoal}{RGB}{51, 51, 51}
 
-\ifx \grey \undefined
+%% Uncommect the following line to produce it in grayscale. %%
+\def \greyscale {1}
+
+\ifx \greyscale \undefined
 	%main color
 	\colorlet{maincol}{orange}
 
@@ -195,14 +202,14 @@
 	\colorlet{sectcol}{white}
 \else
 	%main color
-	\colorlet{maincol}{black}
+	\colorlet{maincol}{graniteGray}
 
 	%secondary colors
-	\colorlet{secondcol}{gray}
-	\colorlet{thirdcol}{darkgray}
+	\colorlet{secondcol}{brightGray}
+	\colorlet{thirdcol}{darkCharcoal}
 	\colorlet{fourthcol}{black}
-	\colorlet{fifthcol}{lightgray}
-	\colorlet{sixthcol}{darkgray}
+	\colorlet{fifthcol}{chineseSilver}
+	\colorlet{sixthcol}{spanishGray}
 
 	%background color
 	\colorlet{bgcol}{white}
@@ -423,7 +430,7 @@
 		
 			% LANGUAGES
 			\cvsect{Languages}{0.49}{thirdcol}{textcol}\\[4pt]
-			\ifx \grey \undefined
+			\ifx \greyscale \undefined
 				\icontext{Language}{12}{\colorbox{maincol}{Arabic (native)}}\\
 				\icontext{Language}{12}{\colorbox{maincol}{English (c1)}}\\
 				\icontext{Language}{12}{\colorbox{maincol}{German (b21}}\\
@@ -434,7 +441,7 @@
 			\fi
 			% LICENCES
 			\cvsect{Certifications \& Licences}{1}{thirdcol}{textcol}\\[4pt]
-			\ifx \grey \undefined
+			\ifx \greyscale \undefined
 				\icontext{Group}{12}{\colorbox{maincol}{Scrum master}}\\
 				\icontext{Suitcase}{12}{\colorbox{maincol}{Scrum product owner}}\\
 				\icontext{Car}{12}{\colorbox{maincol}{Driving license (A \& B)}}\\
