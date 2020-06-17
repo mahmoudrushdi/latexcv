@@ -37,7 +37,8 @@
 
 %we use article class because we want to fully customize the page
 \documentclass[10pt,A4]{article}	
-
+\usepackage[main=english,german]{babel}
+\selectlanguage{german}
 
 %----------------------------------------------------------------------------------------
 %	ENCODING
@@ -176,7 +177,7 @@
 \definecolor{darkCharcoal}{RGB}{51, 51, 51}
 
 %% Uncommect the following line to produce it in grayscale. %%
-\def \greyscale {1}
+%\def \greyscale {1}
 
 \ifx \greyscale \undefined
 	%main color
@@ -372,7 +373,7 @@
 	\icontext{MapMarker}{12}{München, Germany}\\
 	\icontext{MobilePhone}{12}{+49 152 213 515 66}\\
 	\icontext{Send}{12}{mahmoud.rushdi@gmail.com}\\
-	\icontext{Github}{12}{github.com/mahmoudrushdi}\\
+	\icontext{Github}{12}{github.com/mrushdi}\\
 	}%&
 	%\parbox{0.3\textwidth}{
 	%\icontext{MousePointer}{12}{www.jankuester.com}\\
@@ -410,7 +411,7 @@
 		}
 		\hspace{10pt}
 		\parbox[c][3cm][c]{0.29\textwidth}{
-		\textcolor{textcol}{Experienced in Automotive architectures including the \textbf{classical AUTOSAR} and the 
+		\textcolor{textcol}{Experienced in Automotive architectures including the \textbf{classic AUTOSAR} and the 
 		\textbf{adaptive AUTOSAR}. Accomplished challenging projects targeting ADAS and ASIL-D \textbf{safety critical} systems.  
  			}
 		}
@@ -437,7 +438,7 @@
 			\else
 				\icontext{Language}{12}{\colorbox{fifthcol}{Arabic (native)}}\\
 				\icontext{Language}{12}{\colorbox{fifthcol}{English (c1)}}\\
-				\icontext{Language}{12}{\colorbox{fifthcol}{German (b21}}\\
+				\icontext{Language}{12}{\colorbox{fifthcol}{German (b1)}}\\
 			\fi
 			% LICENCES
 			\cvsect{Certifications \& Licences}{1}{thirdcol}{textcol}\\[4pt]
